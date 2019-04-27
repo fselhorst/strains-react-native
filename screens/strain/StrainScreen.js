@@ -8,7 +8,10 @@ export default class StrainScreen extends React.Component {
 
     render() {
         const {navigate, state: {params}} = this.props.navigation;
-        const {id, name, image: {src}, kind, origin, description, meta} = params.strain;
+        const {id, name, image: {url, width, height}, kind, origin, description, thc, cbd, sativa, indica} = params.strain;
+        const meta = {
+            thc,cbd,sativa,indica
+        }
 
         return (
             <ScrollView contentContainerStyle={styles.container}>
@@ -21,9 +24,9 @@ export default class StrainScreen extends React.Component {
                         {kind}
                     </Paragraph>
                     <Image
-                        style={{width: 250, height: 250}}
+                        style={{width: width / 1.5, height: height / 1.5}}
                         source={{
-                            uri: src
+                            uri: url
                         }}/>
                     <Paragraph styles={{lineHeight: 26}}>{description}</Paragraph>
                 </View>

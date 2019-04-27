@@ -28,7 +28,7 @@ const cardStyles = StyleSheet.create({
     }
 });
 
-export const Card = ({handleOnPress, data: {id, name, kind, image: { src }}}) => {
+export const Card = ({handleOnPress, data: {id, name, kind, image: { url, width, height }}}) => {
     return (
         <View style={cardStyles.card}>
             <Title>{name}</Title>
@@ -40,9 +40,9 @@ export const Card = ({handleOnPress, data: {id, name, kind, image: { src }}}) =>
             </Paragraph>
             <TouchableHighlight onPress={handleOnPress}>
                 <Image
-                    style={{width: 200, height: 200}}
+                    style={{width: width / 2, height: height / 2}}
                     source={{
-                        uri: src
+                        uri: url
                 }}/>
             </TouchableHighlight>
             <Button onPress={handleOnPress}>more details</Button>
