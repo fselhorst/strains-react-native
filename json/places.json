@@ -1,0 +1,53 @@
+[
+  {
+    "id": 0,
+    "name": "Hunter’s Bros",
+    "openingTimes": "Open daily from 9am -- 11pm",
+    "excerpt": "Located near the ringway at the North side of town, Hunter’s Bros provides visitors and locals with the widest variety in top quality.",
+    "img": {
+      "src": "http://www.hunters-coffeeshop.com/wp-content/uploads/2015/10/bros_01.jpg"
+    }
+  },
+  {
+    "id": 1,
+    "name": "Hunter’s Filiaal",
+    "openingTimes": "Open daily from 9am -- 11pm",
+    "excerpt": "Located near the ringway at the North side of town, Hunter’s Bros provides visitors and locals with the widest variety in top quality.",
+    "img": {
+      "src": "http://www.hunters-coffeeshop.com/wp-content/uploads/2015/10/280x299_filall_02.jpg"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Hunter’s The Bar",
+    "openingTimes": "Open daily from 9am -- 11pm",
+    "excerpt": "You’ll find Hunter’s The Bar just around the corner of Rembrandt Square. Come on in and feel free to mix it up.",
+    "img": {
+      "src": "http://www.hunters-coffeeshop.com/wp-content/uploads/2015/10/hunters_the_bar_01.jpg"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Hunter’s Coffeeshop Amsterdam",
+    "openingTimes": "Open daily from 7am -- 1am",
+    "img": {
+      "src": "http://www.hunters-coffeeshop.com/wp-content/uploads/2015/10/hunters_coffeeshop.jpg"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Hunter’s The Pub",
+    "openingTimes": "Open daily from 7am -- 1am",
+    "img": {
+      "src": "http://www.hunters-coffeeshop.com/wp-content/uploads/2015/10/hunters_the_pub.jpg"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Hunter’s Coffeeshop Haarlem – Key West",
+    "openingTimes": "Open daily from 7am -- 1am",
+    "img": {
+      "src": "http://www.hunters-coffeeshop.com/wp-content/uploads/2015/10/hunters_coffeeshop.jpg"
+    }
+  }
+]
