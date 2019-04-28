@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@babel/plugin-proposal-export-namespace-from": "^7.2.0",
+    "@expo/vector-icons": "latest",
     "apollo-cache-inmemory": "^1.5.1",
     "apollo-client": "^2.5.1",
     "apollo-link-http": "^1.5.14",
@@ -18,9 +19,9 @@
     "react": "16.5.0",
     "react-apollo": "^2.5.5",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-view-overflow": "^0.0.4",
     "react-navigation": "^3.9.1",
-    "react-navigation-tabs": "^2.1.2",
-    "@expo/vector-icons": "latest"
+    "react-navigation-tabs": "^2.1.2"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"

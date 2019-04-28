@@ -34,10 +34,10 @@ export const MetaDataBlocks = ({meta}) => {
 
     return (
         <View style={styles.container}>
-            {thc && <SkewedRectangle color="#FEBD27" title={"THC"} subTitle={thc}/>}
-            {cbd && <SkewedRectangle color="#FE672E" title={"CBD"} subTitle={cbd}/>}
-            {sativa && <SkewedRectangle color="#F52E3A" title={"SATIVA"} subTitle={sativa}/>}
-            {indica && <SkewedRectangle style={{marginBottom: -40}} color="#CF2467" title={"INDICA"} subTitle={indica}/>}
+            {thc && <SkewedRectangle color="#FEBD27" title={"THC"} subTitle={thc + "%"}/>}
+            {cbd && <SkewedRectangle color="#FE672E" title={"CBD"} subTitle={cbd + "%"}/>}
+            {sativa && <SkewedRectangle color="#F52E3A" title={"SATIVA"} subTitle={sativa + "%"}/>}
+            {indica && <SkewedRectangle style={{marginBottom: -40}} color="#CF2467" title={"INDICA"} subTitle={indica + "%"}/>}
             <View style={{
                 position:'relative',
                 zIndex: -1,

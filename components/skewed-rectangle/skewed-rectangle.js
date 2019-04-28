@@ -41,7 +41,7 @@ export const SkewedRectangle = ({color, title, subTitle, style}) => {
             justifyItems: 'center'
         }}>
             <Text style={{textAlign: 'center', color: "#fff", fontSize: 28}}>{title}</Text>
-            <Text style={{textAlign: 'center', color: "#fff", fontSize: 37, fontWeight:"900"}}>{subTitle}%</Text>
+            <Text style={{textAlign: 'center', color: "#fff", fontSize: 37, fontWeight:"900"}}>{subTitle}</Text>
         </View>
         <View style={{
             backgroundColor: color,
