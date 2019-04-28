@@ -3,6 +3,7 @@ import {Image, ScrollView, View, TouchableHighlight, StyleSheet } from "react-na
 import {Title} from "../title/title";
 import {Paragraph} from "../paragraph/paragraph";
 import {Button} from "../button/button";
+import Icon from "@expo/vector-icons/Entypo";
 
 const cardStyles = StyleSheet.create({
     card: {
@@ -28,9 +29,10 @@ const cardStyles = StyleSheet.create({
     }
 });
 
-export const Card = ({handleOnPress, data: {id, name, kind, image: { url, width, height }}}) => {
+export const StrainCard = ({handleOnPress, data: {id, name, kind, image: { url, width, height }}}) => {
     return (
         <View style={cardStyles.card}>
+            <Icon color={"#CCC"} style={{position: 'absolute', right: 16, top: 16}} size={20} name="heart-outlined"/>
             <Title>{name}</Title>
             <Paragraph
                 styles={cardStyles.kind}
@@ -45,7 +47,7 @@ export const Card = ({handleOnPress, data: {id, name, kind, image: { url, width,
                         uri: url
                 }}/>
             </TouchableHighlight>
-            <Button onPress={handleOnPress}>more details</Button>
+            <Button styles={{margin: 8}} onPress={handleOnPress}>MORE DETAILS</Button>
         </View>
     )
 }

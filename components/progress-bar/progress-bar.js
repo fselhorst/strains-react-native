@@ -3,7 +3,7 @@ import {StyleSheet, Text, View, Dimensions, Image} from 'react-native';
 
 export const ProgressBar = ({percentage = 100, style, color}) => {
 
-    const progress =  ( Dimensions.get('window').width - 60 ) * (percentage / 100);
+    const progress =  ( Dimensions.get('window').width - 60 ) * (+percentage / 100);
     return (
         <View contentContainerStyle={[styles.container, style]}>
             <View style={{

@@ -14,10 +14,13 @@
     "expo": "^32.0.0",
     "graphql": "^14.2.1",
     "graphql-tag": "^2.10.1",
+    "moment": "^2.24.0",
     "react": "16.5.0",
     "react-apollo": "^2.5.5",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
-    "react-navigation": "^3.9.1"
+    "react-navigation": "^3.9.1",
+    "react-navigation-tabs": "^2.1.2",
+    "@expo/vector-icons": "latest"
   },
   "devDependencies": {
     "babel-preset-expo": "^5.0.0"
