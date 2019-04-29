@@ -26,10 +26,11 @@ export const CustomDrawerItems = props => {
     const { items, activeItemKey } = props;
     return <View style={styles.container}>
         <TouchableHighlight
+            style={{marginBottom: 35,marginTop: 15}}
             underlayColor={null}
             onPress={() => props.navigation.goBack()}
         >
-            <Icon style={{marginBottom: 35}} name="cross" size={24}/>
+            <Icon name="cross" size={24}/>
         </TouchableHighlight>
         {items.map(route => {
             return <Animated.View key={route.key}>

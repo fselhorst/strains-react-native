@@ -11,7 +11,8 @@ const styles = StyleSheet.create({
         marginLeft: -100,
         bottom: 0,
         left: -100,
-        flex: 1
+        flex: 1,
+        overflow: "hidden"
     },
     skew: {
         transform: [

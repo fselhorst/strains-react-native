@@ -35,21 +35,37 @@ export default class EventsScreen extends React.Component {
 
         return (
             <ApolloProvider>
-                <TouchableHighlight
-                    underlayColor={null}
-                    onPress={() => this.props.navigation.openDrawer()}
-                    style={{
-                        position: 'absolute',
-                        top: 50,
-                        left: 30,
-                        height: 30,
-                        width: 30,
-                        zIndex: 4,
+                <View style={{
+                    backgroundColor: "#fff",
+                    zIndex: 9,
+                    height: 60,
+                    marginTop: 25,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                }}>
+                    <TouchableHighlight
+                        underlayColor={null}
+                        onPress={() => this.props.navigation.openDrawer()}
+                        style={{
+                            height: 100,
+                            width: 30,
+                            zIndex: 9,
+                            position: 'absolute',
+                            left: 30,
+                            top: 18
+                        }}
+                    >
+                        <Icon style={{color:"#303030"}} name="menu" size={24} />
+                    </TouchableHighlight>
+                    <Text style={{
                         flex: 1,
-                    }}
-                >
-                    <Icon style={{color:"#303030"}} name="menu" size={24} />
-                </TouchableHighlight>
+                        position:'absolute',
+                        textAlign:'center',
+                        fontSize: 18,
+                        fontWeight: '600',
+                    }}>EVENTS</Text>
+                </View>
                 <ScrollView contentContainerStyle={styles.container}>
                     <EventContainer render={(events) => {
                         return events.map( event => {
@@ -64,7 +80,7 @@ export default class EventsScreen extends React.Component {
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 100,
+        marginTop: 25,
         width: Dimensions.get('window').width,
     }
-})
+});

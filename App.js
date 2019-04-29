@@ -4,7 +4,7 @@ import { createStackNavigator, createAppContainer, createDrawerNavigator } from 
 import HomeScreen from "./screens/home/HomeScreen";
 import StrainScreen from "./screens/strain/StrainScreen";
 import EventsScreen from "./screens/events/EventsScreen";
-import {CustomDrawer} from "./navigator/custom-drawer/custom-drawer";
+import { CustomDrawer } from "./navigator/custom-drawer/custom-drawer";
 import { Icon } from "@expo/vector-icons/Entypo"; // 1.0.0-beta.27
 
 const TestDrawerNavigator = createDrawerNavigator({

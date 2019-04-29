@@ -14,7 +14,9 @@ export const CustomDrawer = props => (
                 <CustomDrawerItems {...props} />
             </SafeAreaView>
         </ScrollView>
+        <ViewWithoutOverflow>
             <FooterBottomBlocks />
+        </ViewWithoutOverflow>
     </View>
 );
 
