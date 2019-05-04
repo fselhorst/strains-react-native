@@ -7,14 +7,14 @@ import {FadeInView} from "../../components/fade-in-view/fade-in-view";
 
 // this just fetches the data and passes it to render func
 
-const EventContainer = (props) => {
-    const { data } = props
-
+const LocationContainer = (props) => {
+    const { data } = props;
+    console.log({data})
     return data && !data.loading ?
         (
             <View>
                 <FadeInView>
-                    {props.render(data.events)}
+                    {props.render(data.lokaties)}
                 </FadeInView>
             </View>
 
@@ -22,14 +22,16 @@ const EventContainer = (props) => {
 };
 
 export default graphql(gql` {
-  events {
-    id
-    name
-    eventLocation
-    price
-    startDate
-    endDate
-    mapsUrl
+  lokaties {
+      id
+      name
+      address
+      description
+      lat
+      lng
+      image {
+          url
+      }
   }  
 }
-`)(EventContainer);
+`)(LocationContainer);

@@ -1,8 +1,6 @@
 import React from 'react';
 import { StyleSheet, ScrollView, Text, TouchableHighlight, View, Animated } from 'react-native';
 import Icon from '@expo/vector-icons/Entypo';
-import {MetaDataBlocks} from "../../components/meta-data-blocks/meta-data-blocks";
-import {FooterBottomBlocks} from "../../components/footer-bottom-blocks/footer-bottom-blocks";
 
 const styles = StyleSheet.create({
     container: {

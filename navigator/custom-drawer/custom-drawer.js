@@ -1,9 +1,6 @@
 import React from 'react';
 import { StyleSheet, ScrollView,View, Text } from 'react-native';
-import ViewWithoutOverflow from 'react-native-view-overflow';
-
-
-import { DrawerItems, SafeAreaView } from 'react-navigation';
+import { SafeAreaView } from 'react-navigation';
 import {CustomDrawerItems} from "../custom-drawer-items/custom-drawer-items";
 import {FooterBottomBlocks} from "../../components/footer-bottom-blocks/footer-bottom-blocks";
 
@@ -14,9 +11,7 @@ export const CustomDrawer = props => (
                 <CustomDrawerItems {...props} />
             </SafeAreaView>
         </ScrollView>
-        <ViewWithoutOverflow>
-            <FooterBottomBlocks />
-        </ViewWithoutOverflow>
+        {/*<FooterBottomBlocks />*/}
     </View>
 );
 

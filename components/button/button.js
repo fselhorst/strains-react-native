@@ -31,7 +31,7 @@ const buttonStyles = StyleSheet.create({
     }
 });
 
-export const Button = ({children, onPress, styles, mode = "filled"}) => {
+export const Button = ({children, onPress, styles, textStyles, mode = "filled"}) => {
     return mode === "filled" ? (
             <TouchableHighlight
                 onPress={onPress}
@@ -49,7 +49,7 @@ export const Button = ({children, onPress, styles, mode = "filled"}) => {
             ...styles
         }}
     >
-        <Text style={[buttonStyles.text, buttonStyles.outlineText]}>
+        <Text style={[buttonStyles.text, buttonStyles.outlineText, textStyles]}>
             {children}
         </Text>
     </TouchableHighlight>

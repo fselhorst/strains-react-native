@@ -1,8 +1,6 @@
 import React from 'react'
-import {View, Text, StyleSheet, Dimensions} from 'react-native';
-import { SkewedRectangle } from '../../components/skewed-rectangle/skewed-rectangle';
-import {ProgressBar} from "../progress-bar/progress-bar";
-import {Paragraph} from "../paragraph/paragraph";
+import {StyleSheet, View} from 'react-native';
+import {SkewedRectangle} from '../../components/skewed-rectangle/skewed-rectangle';
 
 const styles = StyleSheet.create({
     container: {
@@ -12,7 +10,6 @@ const styles = StyleSheet.create({
         bottom: 0,
         left: -100,
         flex: 1,
-        overflow: "hidden"
     },
     skew: {
         transform: [
@@ -28,7 +25,7 @@ const styles = StyleSheet.create({
 });
 
 export const FooterBottomBlocks = ({meta}) => {
-     return (
+    return (
         <View style={styles.container}>
             <SkewedRectangle style={{height: 120}} color="#FEBD27"/>
             <SkewedRectangle style={{height: 120}} color="#FE672E"/>
@@ -36,4 +33,4 @@ export const FooterBottomBlocks = ({meta}) => {
             <SkewedRectangle style={{height: 120, marginBottom: -40}} color="#CF2467"/>
         </View>
     )
-}
+};

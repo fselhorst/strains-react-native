@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'react-apollo';
+import { graphql  } from 'react-apollo';
 import {View } from 'react-native'
 
 import gql from "graphql-tag";
@@ -7,14 +7,14 @@ import {FadeInView} from "../../components/fade-in-view/fade-in-view";
 
 // this just fetches the data and passes it to render func
 
-const EventContainer = (props) => {
-    const { data } = props
+const ProductContainer = (props) => {
+    const { data, style } = props;
 
     return data && !data.loading ?
         (
-            <View>
+            <View style={style}>
                 <FadeInView>
-                    {props.render(data.events)}
+                    {props.render(data.products)}
                 </FadeInView>
             </View>
 
@@ -22,14 +22,13 @@ const EventContainer = (props) => {
 };
 
 export default graphql(gql` {
-  events {
+  products {
     id
     name
-    eventLocation
     price
-    startDate
-    endDate
-    mapsUrl
+    image {
+       url
+    }
   }  
 }
-`)(EventContainer);
+`)(ProductContainer);

@@ -33,14 +33,14 @@ export const StrainCard = ({handleOnPress, data: {id, name, kind, image: { url, 
     return (
         <View style={cardStyles.card}>
             <Icon color={"#CCC"} style={{position: 'absolute', right: 16, top: 16}} size={20} name="heart-outlined"/>
-            <Title>{name}</Title>
+            <TouchableHighlight underlayColor={null} onPress={handleOnPress}><Title>{name}</Title></TouchableHighlight>
             <Paragraph
                 styles={cardStyles.kind}
                 align="center"
             >
                 {kind}
             </Paragraph>
-            <TouchableHighlight onPress={handleOnPress}>
+            <TouchableHighlight underlayColor={null} onPress={handleOnPress}>
                 <Image
                     style={{width: width / 2, height: height / 2}}
                     source={{

@@ -1,9 +1,9 @@
 import React from 'react';
-import { graphql, ApolloProvider } from 'react-apollo';
-import {View, Text, Image, TouchableHighlight} from 'react-native'
-
+import { graphql } from 'react-apollo';
+import { View, Image } from 'react-native'
 import gql from "graphql-tag";
-import {FadeInView} from "../../components/fade-in-view/fade-in-view";
+
+import { FadeInView } from "../../components/fade-in-view/fade-in-view";
 
 
 const StrainContainer = (props) => {

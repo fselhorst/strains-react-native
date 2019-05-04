@@ -1,24 +1,29 @@
 import React from 'react';
 import { Button, Image, View, Text,Dimensions  } from 'react-native';
 import { createStackNavigator, createAppContainer, createDrawerNavigator } from 'react-navigation';
-import HomeScreen from "./screens/home/HomeScreen";
-import StrainScreen from "./screens/strain/StrainScreen";
-import EventsScreen from "./screens/events/EventsScreen";
+
+import {StrainsScreen, StrainScreen, EventsScreen, MerchandiseScreen, LocationsScreen } from './screens/'
 import { CustomDrawer } from "./navigator/custom-drawer/custom-drawer";
 import { Icon } from "@expo/vector-icons/Entypo"; // 1.0.0-beta.27
 
 const TestDrawerNavigator = createDrawerNavigator({
-    Home: {
-        screen: HomeScreen,
+    Strains: {
+        screen: StrainsScreen,
     },
     Events: {
         screen: EventsScreen,
     },
+    Locations: {
+        screen: LocationsScreen
+    },
+    Merchandise: {
+        screen: MerchandiseScreen
+    }
 },{
-    initialRouteName: 'Home',
+    initialRouteName: 'Locations',
     drawerType: "front",
     hideStatusBar: true,
-    drawerIcon: ({ tintColor }) => (
+    drawerIcon: () => (
         <Icon
             onPress={() => navigation.openDrawer()}
             name="hamburger"
@@ -33,14 +38,20 @@ const TestDrawerNavigator = createDrawerNavigator({
 
 const MainStack = createStackNavigator(
     {
-        Home: {
-            screen: HomeScreen,
+        Strains: {
+            screen: StrainsScreen,
         },
         Events: {
             screen: EventsScreen,
         },
         Strain: {
             screen: StrainScreen
+        },
+        Locations: {
+            screen: LocationsScreen
+        },
+        Merchandise: {
+            screen: MerchandiseScreen
         }
     }
 );
@@ -53,7 +64,7 @@ const RootStack = createStackNavigator(
         },
     },
     {
-        mode: 'modal',
+        mode: 'card',
         headerMode: 'none',
     }
 );

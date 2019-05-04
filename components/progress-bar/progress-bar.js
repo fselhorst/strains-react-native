@@ -2,8 +2,9 @@ import React from 'react';
 import {StyleSheet, Text, View, Dimensions, Image} from 'react-native';
 
 export const ProgressBar = ({percentage = 100, style, color}) => {
-
-    const progress =  ( Dimensions.get('window').width - 60 ) * (+percentage / 100);
+    const paddingLeftAndRight = 60;
+    const progress =
+        ( Dimensions.get('window').width - paddingLeftAndRight ) * ( +percentage / 100 );
     return (
         <View contentContainerStyle={[styles.container, style]}>
             <View style={{
@@ -28,6 +29,7 @@ export const ProgressBar = ({percentage = 100, style, color}) => {
                     },
                     shadowColor: color,
                     shadowOpacity: 0.3,
+                    elevation: 3
                 }}>
                 </View>
             </View>
